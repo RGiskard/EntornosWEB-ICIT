@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mi página</title>
+        <style type="text/css">
+            h1 {color: rgb(155, 150, 143);font-family: 'Courier New', Courier, monospace;}
+        </style>
+    </head>    
+    <body>
+        <h1 style="font-family: cursive; color: maroon;font-size:5cm;">Texto a modificar</h1>
+        <h1> Texto a modificar2</h1>
+        <h1> Texto a modificar3</h1>
+        <br>
+        <h4>Párrafo</h4>
+        Bienvido a mi página personal esta es una prueba
+        <form>
+            <label for="id_dni">Nombre:</label>
+            <input type="text" id="id_nombre" name="dni"> 
+            <button onclick="mifuncion()">Click me</button>
+        </form>
+    </body>
+<html>
+    <script>
+        function mifuncion(){
+            var ele = document.getElementById('id_nombre');
+            alert('Hola '+ele.value+' bienvenido.!! :)')
+        }
+    </script>

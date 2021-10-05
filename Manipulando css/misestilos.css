@@ -1,0 +1,27 @@
+.myClass {
+    background-image: radial-gradient(circle at 35.47% 18.85%, #ff8a2b 0, #ff7a36 12.5%, #ff693d 25%, #ff5843 37.5%, #f94646 50%, #e73448 62.5%, #d6234a 75%, #c7114c 87.5%, #b8004e 100%);
+    background-color: #090979;
+    background:linear-gradient(top, black 10%, orangered 75%, yellow);
+}
+
+
+#mySection1 {
+    background-color: chocolate;
+}
+
+#mySection2 {
+    background-color: crimson;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+div {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+span {
+    background-color: aqua;
+}
