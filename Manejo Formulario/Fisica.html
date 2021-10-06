@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Cálculos matemáticos</title>
+        <style>
+            container {
+                justify-content: center;
+            }
+            form{
+                border:1px solid red;
+                width:50%; 
+                margin:0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Cálculo de MRU</h1></center>
+        <div class="container">
+            <form>
+                <label>Distancia:</label>
+                <input type="number" id='id_numero1'>
+                <br>
+                <label>Tiempo:</label>
+                <input type="number" id='id_numero2'> 
+                <br>
+                <button type="button" id='id_boton' onclick="sumanumeros()">Calcular velocidad</button>            
+            </form>
+        </div>
+    </body>
+</html>
+<script text="text/javascript">
+    function sumanumeros()
+    {
+        var distancia = parseInt(document.getElementById('id_numero1').value);
+        var tiempo = parseInt(document.getElementById('id_numero2').value);
+        var velocidad = distancia/tiempo;
+        alert('La velocidad es: '+velocidad+' m/s');
+    }
+</script>
