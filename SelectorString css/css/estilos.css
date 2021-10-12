@@ -1,0 +1,7 @@
+/*Selección única*/
+h2{font-family: 'Times New Roman', Times, serif;background-color: royalblue;}
+/*Selección multiple*/
+h1,h3{background-color: peru;font-family: 'Courier New', Courier, monospace;}
+/*Selecciones por id*/
+#botonTest{border-radius: 4px;font-size:500%;padding-top:1in;}
+/*Seleccion por clase*/
