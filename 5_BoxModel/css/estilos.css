@@ -1,0 +1,27 @@
+.box200 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(29, 23, 17);
+    color:green;
+  }
+.box200padding{
+      width: 200px;
+      height:200px;
+      border: 1px solid blue;
+      color: blueviolet;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      float: left;
+  }
+.box200todo{
+    width: 200px;
+    height: 200px;
+    color: blue;
+    padding: 40px 10px 0px 10px;
+    margin: 25px 5px;
+    border-width: 2px 5px;
+    border-style: solid dotted;
+    border-color: red blue green maroon;
+    float: right;
+  }
