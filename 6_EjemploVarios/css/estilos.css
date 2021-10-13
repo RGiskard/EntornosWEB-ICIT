@@ -1,0 +1,11 @@
+.img1{
+    margin:5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+#id_div1{
+    margin:5px;
+    border: 1px solid yellow;
+    float: right;
+}
