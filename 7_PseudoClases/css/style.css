@@ -1,0 +1,34 @@
+#h6{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+#mi_id{
+    font-family: 'Courier New', Courier, monospace;
+}
+#id_div{
+    border-style: solid;
+    border-color: red blue green maroon;
+}
+div.up{
+    position: fixed;
+    left: 2cm;
+    top: 40%;
+    padding: .2ex;
+    min-width: 5.5ex;
+}
+
+.box200todo{
+    width: 200px;
+    height: 200px;
+    color: blue;
+    padding: 40px 10px 0px 10px;
+    margin: 25px 5px;
+    border-width: 2px 5px;
+    border-style: solid dotted;
+    border-color: red blue green maroon;
+  }
+  .boxN{
+    float: right;
+  }
+  .box400grad{
+    background: linear-gradient(to bottom, blue, white);
+    border-style: solid;
+    border-radius: 50%;
+  }
