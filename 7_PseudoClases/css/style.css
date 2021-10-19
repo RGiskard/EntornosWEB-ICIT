@@ -32,3 +32,8 @@ div.up{
     border-style: solid;
     border-radius: 50%;
   }
+  .rounddiv{
+    background: linear-gradient(to top,green,peru);
+    border-style: solid;
+    border-radius: 50%;
+  }
