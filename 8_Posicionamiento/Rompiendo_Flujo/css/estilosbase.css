@@ -1,0 +1,10 @@
+.float {
+    float: right;
+    text-align: center;
+    color: tomato;
+}
+
+.box400 {
+    width: 400px;
+    height: 400px;
+}
