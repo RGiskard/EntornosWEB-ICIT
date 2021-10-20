@@ -1,0 +1,42 @@
+body {
+    font-size: 1em;
+}
+
+#container {
+    width: 920px;
+}
+
+#banner {
+    width: 920px;
+    height: 120px;
+}
+
+#nav {
+    float: left;
+    width: 200px;
+}
+
+#content {
+    width: 720px;
+}
+
+#footer {
+    font-size: .8em;
+}
+
+.boximg {
+    width: 400;
+    height: 400;
+    padding: 20px;
+    margin: 5cm;
+    border-color: tomato;
+}
+
+.boxtext {
+    width: 400;
+    height: 400;
+    padding: 20px;
+    margin: 5cm;
+    border-color: tomato;
+    border-style: solid dotted;
+}
