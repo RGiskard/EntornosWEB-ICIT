@@ -4,6 +4,18 @@
     color: tomato;
 }
 
+.absoluto {
+    position: absolute;
+    text-align: center;
+    color: green;
+}
+
+.relativo {
+    position: relative;
+    text-align: center;
+    color: royalblue;
+}
+
 .box400 {
     width: 400px;
     height: 400px;
