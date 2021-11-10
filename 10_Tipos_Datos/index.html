@@ -64,6 +64,11 @@
             </div>
         </form>
     </div>
+    <hrule>
+        <div class="container">
+           <h2 color="peru">Los tipos de dato</h2>
+           <button type="button" onclick="tiposDatos()">Tipos</button> 
+        </div>
 </body>
 
 </html>
@@ -97,5 +102,14 @@
         var b = document.getElementById('id_valor_b').value;
         var c = Math.sqrt(a * a + b * b)
         document.getElementById('id_valor_c').value = c;
+    }
+    function tiposDatos(){
+        var numero=15;
+        var nombre = "icit-los campeones";
+        var booleano = true;
+        alert("La funcion tiene lo siguiente:");
+        alert("numero es de tipo "+typeof(numero)+" y su valor es:"+numero);
+        alert("nombre es de tipo "+typeof(nombre)+" y su valor es:"+nombre);
+        alert("booleano es de tipo "+typeof(booleano)+" y su valor es:"+booleano);
     }
 </script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label>Edad</label>
+            <input type="number" id="minumero">
+            <br>
+            <label>Libro</label>
+            <input type="text" id="mitexto">
+            <br>
+            <button type="button" onclick="evaluarEdad()">Evaluar</button>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    function evaluarEdad() {
+        var edad = document.getElementById("minumero").value;
+        var libro = document.getElementById("mitexto").value;
+        alert("Tienes "+edad+" años de edad");
+        if(edad>=18 && libro=="asimov"){
+            alert("Puedes visualizar el contenido");
+            document.write("<h1>Te gusta la ciencia ficción</h1>");
+            document.write("<h2>Bienvenido</h2>")
+        }
+        if(edad<18){
+            alert("Eres menor de edad Chauu!!");
+            document.write("<h1>Menor de EDAD</h1>");
+        }
+    }
+</script>
