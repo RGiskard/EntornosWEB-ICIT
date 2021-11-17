@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Estructuras repetitivas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Esta e una Estructuras que se repite</h1>
+        <form>
+            <label>Repeticiones:</label>
+            <input type="number" id="id_entrada">
+            <br>
+            <button type="button" onclick="repetir()">Ejecutar</button>
+        </form>
+    </div>
+    <hr>
+    <div id="div_adicionar">
+        <h1>No tiene botones:</h1>
+    </div>
+    <hr>
+</body>
+
+</html>
+<script>
+    function repetir() {
+        var numero_veces = document.getElementById('id_entrada').value;
+        var element = document.getElementById('div_adicionar')
+        var codigo_boton = "<button>Nuevo</button>"
+        var mensaje = "<h3>Mensaje breve</h3><br>"
+        for (var i = 0; i < convertir(numero_veces); i++) {
+            alert('Ejecucion:' + i);
+            element.innerHTML += codigo_boton;
+            element.innerHTML += mensaje;
+        }
+    }
+
+    function esNumero(palabra) {
+        if (palabra != "") {
+            if (isNaN(palabra))
+                return false;
+            else
+                return !isNaN(palabra);
+        }
+        return false;
+    }
+
+    function convertir(numero) {
+        if (esNumero(numero))
+            return parseInt(numero);
+        else
+            return 0;
+    }
+</script>
