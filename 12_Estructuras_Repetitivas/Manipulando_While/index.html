@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manejando while</title>
+    <meta charset="utf-8">
+
+    <body>
+        <form>
+            <label>Ingrese número:</label>
+            <input type="number">
+            <br>
+            <button id="miboton_10" onclick="bucleWhile(this)">Boton con While</button>
+        </form>
+    </body>
+</head>
+
+</html>
+<script>
+    function bucleWhile(parametro) {
+        iddelboton = parametro.id;
+        var index = 0;
+        while (index < iddelboton.length) {
+            var caracter = iddelboton[index]
+            if (esNumero(caracter)) {
+                parametro.textContent = 'Hay digitos';
+                parametro.style.backgroundColor = 'green';
+                break;
+            } else {
+                parametro.textContent = 'No hay digitos';
+                parametro.style.backgroundColor = 'red';
+            }
+            index++;
+        }
+
+    }
+
+    function esNumero(palabra) {
+        if (palabra != "") {
+            if (isNaN(palabra))
+                return false;
+            else
+                return !isNaN(palabra);
+        }
+        return false;
+    }
+
+    function convertir(numero) {
+        if (esNumero(numero))
+            return parseInt(numero);
+        else
+            return 0;
+    }
+</script>
