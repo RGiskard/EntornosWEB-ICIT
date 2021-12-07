@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-4">.col-xs-4</div>
+        <div class="col-xs-4">.col-xs-4</div>
+        <div class="col-xs-4">.col-xs-4</div>
+    </div>
+    <!--Creando columnas propias-->
+    <hr>
+    <div class="row">
+        <div class="col-md-3" id="bloque_1">
+            <p>Bloque I</p>
+        </div>
+        <div class="col-md-3" id='bloque_2'>
+            <p>Bloque II</p>
+            El contenido del bloque I no ha invadidom el contenido del bloque II
+        </div>
+        <div class="col-md-3" id='bloque_3'>
+            <p>Bloque III</p>
+        </div>
+        <div class="col-md-3">
+            <b>Bloque IV</b>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="textarea" class="form-control" id="html_input" aria-describedby="emailHelp" placeholder="Html">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="button" onclick="insertarHTML()" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function insertarHTML() {
+        //con javascript puro
+        var div_bloque1 = document.getElementById("bloque_1");
+        var div_bloque3 = document.getElementById("bloque_3");
+        var valor = document.getElementById('html_input').value;
+        div_bloque1.innerHTML = '<h1>' + valor + '</h1>';
+        div_bloque3.innerHTML = '<h3>' + valor + '</h3>';
+    }
+</script>
