@@ -81,15 +81,22 @@
     const timer = ms => new Promise(res => setTimeout(res, ms));
     async function barracarga() {
         var ele = document.getElementById('id_barra');
-        var ele1 = document.getElementById('id_barra_1');
-        var ele2 = document.getElementById('id_barra_2');
         for (var i = 0; i <= 100; i++) {
             ele.style = "width:" + i + "%";
             ele.innerText = i + "%";
-            ele1.style = "width:" + i + "%";
-            ele1.innerText = i + "%";
-            ele2.style = "width:" + i + "%";
-            ele2.innerText = i + "%";
+            cargarchicos(2 * i);
+            await timer(1000);
+        }
+    }
+
+    async function cargarchicos(avance) {
+        if (avance <= 100) {
+            var ele1 = document.getElementById('id_barra_1');
+            var ele2 = document.getElementById('id_barra_2');
+            ele1.style = "width:" + avance + "%";
+            ele1.innerText = avance + "%";
+            ele2.style = "width:" + avance + "%";
+            ele2.innerText = avance + "%";
             await timer(1000);
         }
     }
