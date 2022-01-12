@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon-16x16.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música ICIT </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="brand"><img src="logo1.png" alt="ICIT">ICIT</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Playlist</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Lista de Canciones Populares</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/cover1.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="0" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover2.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="1" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover3.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="2" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover4.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="3" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover5.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="4" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover6.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="5" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover7.jpg" alt="1">
+                    <span class="songName"> Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="6" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover8.jpg" alt="1">
+                    <span class="songName">Song name</span>
+                    <span class="songListPlay"><span class="timestamp">4:12 <i id="7" class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="Playing.gif" alt="2" width="40px" id="gif"><span id="masterSongName">1nOnly shakira ft Egovert</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/64e25a8708.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
